@@ -1,0 +1,8 @@
+{"timestamp":"2025-08-04T11:47:08.581464","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-04T11:47:08.585772","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_ml_monitoring.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-04T11:47:10.416291Z","level":"info","event":"Branching to retraining pipeline, based on drift detection.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-04T11:47:10.417120","level":"info","event":"Done. Returned value was: retrain_model","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-08-04T11:47:10.417410","level":"info","event":"Branch into retrain_model","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-08-04T11:47:10.417857","level":"info","event":"Following branch {'retrain_model'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-08-04T11:47:10.419555","level":"info","event":"Skipping tasks [('skip_retrain', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-08-04T11:47:10.477479","level":"info","event":"Skipping downstream tasks.","logger":"task"}

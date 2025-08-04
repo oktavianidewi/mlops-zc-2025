@@ -1,0 +1,4 @@
+{"timestamp":"2025-08-04T01:30:04.112606","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-04T01:30:07.933654Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-08-04T01:30:04.116646","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_ml_monitoring.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-04T01:30:08.074274Z","level":"error","event":"Task killed!","logger":"task"}

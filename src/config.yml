@@ -1,0 +1,21 @@
+local: 
+  # PostgreSQL configuration for MLflow
+  host: localhost
+  port: 5432
+  user: mlflow
+  password: mlflow
+  database: mlflow
+  parent_path: 'pipeline/data' # local
+
+
+dev:
+  host: host.docker.internal
+  port: 5432
+  user: mlflow
+  password: mlflow
+  database: mlflow
+  parent_path: '/opt/airflow/src/pipeline/data' # docker
+
+common: 
+  drift_threshold: 100
+  
