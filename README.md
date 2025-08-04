@@ -125,34 +125,44 @@ password: admin
 The ML pipeline is orchestrated using Apache Airflow, where the model is trained as part of an automated DAG (Directed Acyclic Graph).
 
 
-    ![](./images/a.%20train-model-airflow.png)
+![](./images/a.%20train-model-airflow.png)
 
-    ![](./images/a.%20train-model-airflow-detail.png)
 
-    ![](./images/a.%20prediction.png)
+
+![](./images/a.%20train-model-airflow-detail.png)
+
+
+
+![](./images/a.%20prediction.png)
 
 **b. Experiment Tracking with MLflow**
 
 All model runs, metrics, and artifacts are logged and tracked in MLflow, making it easier to compare different experiments and monitor model performance over time.
 
-    ![](./images/b.%20experiment-tracking-mlflow.png)
+![](./images/b.%20experiment-tracking-mlflow.png)
 
-    ![](./images/a.%20train-model-airflow-detail.png)
+
+
+![](./images/a.%20train-model-airflow-detail.png)
 
 
 **c. Data Drift Simulation**
 
 To emulate real-world scenarios where incoming data changes over time, data drift is simulated every 10 minutes.
 
-    ![](./images/c.%20simulate-drift.png)
+![](./images/c.%20simulate-drift.png)
+
+
 
 **d. Visualizing Drift in Grafana**
 
 Drift metrics and monitoring data are pushed to PostgreSQL, and Grafana dashboards visualize the model’s performance and detected drifts.
 
-    ![](./images/d.%20drift-in-grafana.png)
+![](./images/d.%20drift-in-grafana.png)
 
-    ![](./images/d.%20grafana-with-pg-details.png)
+
+
+![](./images/d.%20grafana-with-pg-details.png)
 
 **e. Automated Model Retraining**
 
